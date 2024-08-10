@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int t;
+    scanf("%d", &t);
+
+    while (t--) {
+  
+        int x, y, z,c,total;
+        scanf("%d %d %d", &x, &y, &z);
+        total=(x*5)+(y*10);
+        c=total/z;
+        printf("%d\n",c);
+       
+    }
+return 0 ;
+}
+//X 5 rupee coins 
+Y 10 rupee coins. A goes to a shop to buy chocolates 
+where each chocolate costs Z rupees. 
+Find the maximum number of chocolates that A can buy 
