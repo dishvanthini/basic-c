@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(void) {
+    int t;
+    scanf("%d", &t);  // Read the number of test cases
+
+    while (t--) {
+        int n;
+        int sum = 0;
+        scanf("%d", &n);  // Read the integer N
+        
+        // Calculate the sum of digits
+        while (n > 0) {
+            sum += n % 10;  // Add the last digit to sum
+            n /= 10;        // Remove the last digit from N
+        }
+        
+        printf("%d\n", sum);  // Print the sum of digits
+    }
+    
+    return 0;
+}
